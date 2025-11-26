@@ -24,7 +24,7 @@ A unified React Native interface for accessing health data from both **Android H
 ```bash
 yarn add @dayaki/react-native-health-kits
 # or
-npm install @dayaki/react-native-health-kits
+pnpm add @dayaki/react-native-health-kits
 ```
 
 ### iOS Setup
