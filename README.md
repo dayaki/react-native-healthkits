@@ -1,4 +1,4 @@
-# @dayaki/react-native-health-kits
+# @mbdayo/react-native-health-kits
 
 A unified React Native interface for accessing health data from both **Android Health Connect** and **iOS HealthKit**.
 
@@ -22,9 +22,9 @@ A unified React Native interface for accessing health data from both **Android H
 ## Installation
 
 ```bash
-yarn add @dayaki/react-native-health-kits
+yarn add @mbdayo/react-native-health-kits
 # or
-pnpm add @dayaki/react-native-health-kits
+pnpm add @mbdayo/react-native-health-kits
 ```
 
 ### iOS Setup
@@ -78,7 +78,7 @@ cd ios && pod install
 ### Basic Example
 
 ```typescript
-import HealthKits from '@dayaki/react-native-health-kits';
+import HealthKits from '@mbdayo/react-native-health-kits';
 
 // Check availability
 const available = await HealthKits.isAvailable();
@@ -256,7 +256,7 @@ The following workout types are supported on both platforms:
 The library provides typed errors for common failure cases:
 
 ```typescript
-import { HealthKitError, HealthKitErrorCode } from '@dayaki/react-native-health-kits';
+import { HealthKitError, HealthKitErrorCode } from '@mbdayo/react-native-health-kits';
 
 try {
   await HealthKits.readData({ ... });

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@dayaki/react-native-health-kits": ["./src/index"]
+      "@mbdayo/react-native-health-kits": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

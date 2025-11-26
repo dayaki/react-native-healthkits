@@ -1,5 +1,5 @@
 {
-  "name": "@dayaki/react-native-health-kits",
+  "name": "@mbdayo/react-native-health-kits",
   "version": "1.0.0",
   "description": "A unified React Native interface for accessing health data from Android Health Connect and iOS HealthKit",
   "main": "lib/commonjs/index",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace @dayaki/react-native-health-kits-example",
+    "example": "yarn workspace @mbdayo/react-native-health-kits-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -50,7 +50,7 @@
     "type": "git",
     "url": "git+https://github.com/dayaki/react-native-health-kits.git"
   },
-  "author": "Dayaki <dayaki@example.com>",
+  "author": "Dayaki <hello@madebydayo.co>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dayaki/react-native-health-kits/issues"
