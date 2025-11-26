@@ -1,0 +1,107 @@
+{
+  "name": "@dayaki/react-native-health-kits",
+  "version": "1.0.0",
+  "description": "A unified React Native interface for accessing health data from Android Health Connect and iOS HealthKit",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "*.podspec",
+    "!ios/build",
+    "!android/build",
+    "!android/gradle",
+    "!android/gradlew",
+    "!android/gradlew.bat",
+    "!android/local.properties",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/.*"
+  ],
+  "scripts": {
+    "example": "yarn workspace @dayaki/react-native-health-kits-example",
+    "test": "jest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "clean": "del-cli android/build lib",
+    "prepare": "bob build",
+    "release": "release-it"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "healthkit",
+    "health-connect",
+    "health",
+    "fitness",
+    "steps",
+    "heart-rate",
+    "workout"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayaki/react-native-health-kits.git"
+  },
+  "author": "Dayaki <dayaki@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dayaki/react-native-health-kits/issues"
+  },
+  "homepage": "https://github.com/dayaki/react-native-health-kits#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@react-native/eslint-config": "^0.73.0",
+    "@types/react": "^18.2.0",
+    "del-cli": "^5.1.0",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "react": "18.2.0",
+    "react-native": "0.73.0",
+    "react-native-builder-bob": "^0.23.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0"
+  },
+  "workspaces": [
+    "example"
+  ],
+  "packageManager": "yarn@3.6.1",
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "codegenConfig": {
+    "name": "RNHealthKitsSpec",
+    "type": "modules",
+    "jsSrcsDir": "src",
+    "android": {
+      "javaPackageName": "com.dayaki.reactnativehealthkits"
+    }
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  }
+}
